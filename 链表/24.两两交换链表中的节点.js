@@ -21,10 +21,14 @@
         return head;
     }
 
+    // 1. 两两交换中的头结点
     let newHead = head.next;
-    // 递归处理后续后面的链表
+
+    // 递归处理后续后面的链表(这行代码), 并把处理后链表的头结点指回来(下一行代码)
+    // 这个函数的作用就是两两进行交换, 返回交换后的头结点
     head.next = swapPairs(newHead.next); 
-    // 并把处理后链表的头结点指回来
+
+    // 2. 两两交换中的尾结点, 递归处理, 将小链串成大链
     newHead.next = head;
 
     // 返回处理后的新的头结点
@@ -42,12 +46,13 @@
 var swapPairs = function (head) {
     /**
      * 涉及挪动指针的三段式套路:
-     *  1.创建一个空节点 newHead 作为新链表的头结点
-     *  2.空节点.next指向当前节点首节点
+     *  1.创建虚拟节点 newHead 作为新链表的头结点
+     *  2.虚拟节点存储指向第一个节点的指针
      *  ... 循环逻辑操作 ...
      *  3.返回 newHead.next
      */
 
+    // 创建虚拟节点
     let newHead = new ListNode(0);
     newHead.next = head;
 
