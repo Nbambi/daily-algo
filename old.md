@@ -16,8 +16,8 @@ https://leetcode-cn.com/problems/add-to-array-form-of-integer/
 /**
  * 方法1. 逐位相加
  * 
- * 时间复杂度O(n), 空间复杂度O(1)- [[字符串] 821.字符的最短距离](#字符串-821字符的最短距离)
- * - [[字符串] 821.字符的最短距离](#字符串-821字符的最短距离)
+ * 时间复杂度O(n), 空间复杂度O(1)
+ * 
  * @param {*} num 
  * @param {*} k s
  * @returns
