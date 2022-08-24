@@ -5,14 +5,14 @@
 
 
 
-# [数组] 989.数组形式的整数加法
+<br/>
+
+### [数组] 989.数组形式的整数加法
 ```
 https://leetcode-cn.com/problems/add-to-array-form-of-integer/
 ```
 
 ```javascript
-// https://leetcode-cn.com/problems/add-to-array-form-of-integer/
-
 /**
  * 方法1. 逐位相加
  * 
@@ -83,17 +83,15 @@ var addToArrayForm = function (num, k) {
     return res;
 };
 ```
+<br/>
 
 
-# [链表] 24.两两交换链表中的节点
+### [链表] 24.两两交换链表中的节点
 ```
 https://leetcode-cn.com/problems/swap-nodes-in-pairs/
 ```
 
 ```javascript
-// https://leetcode-cn.com/problems/swap-nodes-in-pairs/
-
-
 /**
  * Definition for singly-linked list.
  * function ListNode(val, next) {
@@ -174,16 +172,15 @@ var swapPairs = function (head) {
     return newHead.next;
 };
 ```
+<br/>
 
 
-# [链表] 61.旋转链表
+### [链表] 61.旋转链表
 ```
 https://leetcode-cn.com/problems/rotate-list/
 ```
 
 ```javascript
-// https://leetcode-cn.com/problems/rotate-list/
-
 /**
  * Definition for singly-linked list.
  * function ListNode(val, next) {
@@ -288,16 +285,15 @@ var rotateRight = function (head, k) {
     return newHead;
 };
 ```
+<br/>
 
 
-# [字符串] 821.字符的最短距离
+### [字符串] 821.字符的最短距离
 ```
 https://leetcode-cn.com/problems/shortest-distance-to-a-character/
 ```
 
 ```javascript
-// https://leetcode-cn.com/problems/shortest-distance-to-a-character/
-
 /**
  * 
  * 方法1. 中心扩展法, 对于每一个元素向左向右各遍历一次找到最小距离
