@@ -50,9 +50,9 @@ var addToArrayForm = function (num, k) {
     // 该方法会改变原数组
     return res;
 };
+```
 
-
-
+```javascript
 /**
  * 方法2. 
  *      另一个思路是将整个加数 k 加入数组表示的数的最低位。
@@ -84,6 +84,7 @@ var addToArrayForm = function (num, k) {
 };
 ```
 <br/>
+
 
 
 ### [链表] 24.两两交换链表中的节点
@@ -125,8 +126,9 @@ https://leetcode-cn.com/problems/swap-nodes-in-pairs/
     // 返回处理后的新的头结点
     return newHead;
 };
+```
 
-
+```javascript
 /**
  * 方法2: 迭代
  *  时间复杂度O(n) 空间复杂度O(1)
@@ -228,9 +230,9 @@ var rotateRight = function (head, k) {
     // 7. 返回newHead
     return newHead;
 };
+```
 
-
-
+```javascript
 /**
  * 方法2. 快慢指针法
  * [思路]
@@ -328,9 +330,9 @@ var shortestToChar = function (s, c) {
     }
     return answer;
 };
+```
 
-
-
+```javascript
 /**
  * 
  * 方法2. 先找出所有匹配的下标, 对剩余未匹配的字符二分查找找到距离最近的位置, 计算距离
@@ -358,8 +360,4 @@ var shortestToChar = function (s, c) {
 
     return answer;
 };
-
-
-
-console.log(shortestToChar('loveleetcode', 'e'));
 ```
